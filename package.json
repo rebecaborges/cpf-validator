@@ -1,0 +1,31 @@
+{
+  "name": "cpf-validator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rebecaborges/cpf-validator.git"
+  },
+  "keywords": [
+    "cpf",
+    "cpf validador"
+  ],
+  "author": "Rebeca Borges",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rebecaborges/cpf-validator/issues"
+  },
+  "homepage": "https://github.com/rebecaborges/cpf-validator#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "^5.16.0"
+  }
+}
