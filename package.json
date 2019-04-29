@@ -24,8 +24,10 @@
     "url": "https://github.com/rebecaborges/cpf-validator/issues"
   },
   "homepage": "https://github.com/rebecaborges/cpf-validator#readme",
-  "dependencies": {},
   "devDependencies": {
-    "eslint": "^5.16.0"
+    "eslint": "^5.16.0",
+    "mocha": "^6.1.4",
+    "nyc": "^14.0.0",
+    "chai": "^4.2.0"
   }
 }

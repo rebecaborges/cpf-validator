@@ -1,4 +1,4 @@
-# Validador de cartão de crédito
+# Validador de cartão de CPF v.1.0.0
 
 ## Como instalar:
 
