@@ -3,19 +3,19 @@ const expect = chai.expect;
 const cpfValidator = require("../lib/index");
 
 describe("cpfValidator()", ()=> {
-  it("1 for random numbers returns false", ()=> {
-   expect(cpfValidator(0202134)).to.equal(false)
+  it("for random numbers returns false", ()=> {
+    expect(cpfValidator(0202134)).to.equal(false)
   });
-  it("2 for CPF valid returns true", ()=> {
+  it("for random numbers bigger then 12 returns false", ()=> {
     expect(cpfValidator(3893893287393)).to.equal(false);
   });
-  it("3 for CPF valid returns true", ()=> {
+  it("for string return false", ()=> {
     expect(cpfValidator("22824244261056851")).to.equal(false);
   });
-  it("4 for CPF invalid", ()=> {
+  it("for string with valid number return false", ()=> {
     expect(cpfValidator("88279776001")).to.equal(false);
   });
-  it("for CPF valid returns true", ()=> {
+  it("for number with punctuation return false", ()=> {
     expect(cpfValidator(206.830-60)).to.equal(false);
   });
   it("for CPF valid returns true", ()=> {
