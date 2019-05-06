@@ -1,16 +1,30 @@
-const chai = require('chai');
+const chai = require("chai");
 const expect = chai.expect;
-const lib = require('../lib/index')
+const cpfValidator = require("../lib/index");
 
 describe("cpfValidator()", ()=> {
-  // it("for random numbers returns false", ()=> {
-  //  expect(lib.cpfValidator(0202134)).to.equal(false)
-  // });
-   it("for CPF valid returns true", ()=> {
-    expect(lib.cpfValidator(407566348)).to.equal(5)
-   });
-   it("for CPF valid returns true", ()=> {
-    expect(lib.cpfValidator(4075663)).to.equal(0)
-   });
-   
+  it("1 for random numbers returns false", ()=> {
+   expect(cpfValidator(0202134)).to.equal(false)
+  });
+  it("2 for CPF valid returns true", ()=> {
+    expect(cpfValidator(3893893287393)).to.equal(false);
+  });
+  it("3 for CPF valid returns true", ()=> {
+    expect(cpfValidator("22824244261056851")).to.equal(false);
+  });
+  it("4 for CPF invalid", ()=> {
+    expect(cpfValidator("88279776001")).to.equal(false);
+  });
+  it("for CPF valid returns true", ()=> {
+    expect(cpfValidator(206.830-60)).to.equal(false);
+  });
+  it("for CPF valid returns true", ()=> {
+    expect(cpfValidator(20683044060)).to.equal(true);
+  });
+  it("for CPF valid returns true", ()=> {
+    expect(cpfValidator(14131222051)).to.equal(true);
+  });
+  it("for CPF valid returns true", ()=> {
+    expect(cpfValidator(88279776001)).to.equal(true);
+  });
 });

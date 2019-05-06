@@ -1,33 +1,31 @@
 {
   "name": "cpf-validator",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "directories": {
-    "lib": "lib",
-    "test": "test"
-  },
+  "description": "validates cpf as true or false (in portuguese)",
+  "main": "./lib/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "nyc mocha",
+    "lint": "eslint ."
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "eslint": "^5.16.0",
+    "mocha": "^6.1.4",
+    "nyc": "^14.0.0"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rebecaborges/cpf-validator.git"
+    "url": "https://github.com/rebecaborges/cpf-validator.git"
   },
   "keywords": [
-    "cpf",
-    "cpf validador"
+    "validador de cpf",
+    "validador",
+    "CPF"
   ],
   "author": "Rebeca Borges",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/rebecaborges/cpf-validator/issues"
   },
-  "homepage": "https://github.com/rebecaborges/cpf-validator#readme",
-  "devDependencies": {
-    "eslint": "^5.16.0",
-    "mocha": "^6.1.4",
-    "nyc": "^14.0.0",
-    "chai": "^4.2.0"
-  }
+  "homepage": "https://github.com/rebecaborges/cpf-validator#validador-de-cart%C3%A3o-de-cpf-v100"
 }
