@@ -1,5 +1,5 @@
 {
-  "name": "cpf-validator",
+  "name": "cpf-valid",
   "version": "1.0.0",
   "description": "validates cpf as true or false (in portuguese)",
   "main": "./lib/index.js",

@@ -27,4 +27,16 @@ describe("cpfValidator()", ()=> {
   it("for CPF valid returns true", ()=> {
     expect(cpfValidator(88279776001)).to.equal(true);
   });
+  it("returns true", ()=> {
+    expect(cpfValidator(88279776001)).to.equal(true);
+  });
+  it("1 repeted returns false", ()=> {
+    expect(cpfValidator(11111111111)).to.equal(false);
+  });
+  it("2 repeted returns false", ()=> {
+    expect(cpfValidator(22222222222)).to.equal(false);
+  });
+  it("3 repeted returns false", ()=> {
+    expect(cpfValidator(33333333333)).to.equal(false);
+  });
 });
